@@ -32,6 +32,7 @@ function getScores() {
         tr.elementId = element._id;
         tr.appendChild(td1);
         tr.appendChild(td2);
+        editbtn.className = "edit";
         delbtn.innerHTML = "Delete";
         editbtn.innerHTML = "Edit";
         td3.appendChild(delbtn);
