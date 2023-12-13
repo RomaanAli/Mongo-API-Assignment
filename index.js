@@ -14,7 +14,7 @@ const {
 app.use(express.json());
 
 mongoose
-  .connect("mongodb+srv://romaanali:AxAtBN1HhalQmRAQ@cluster0.garqbav.mongodb.net/?retryWrites=true&w=majority", {
+  .connect(`mongodb+srv://romaanali:AxAtBN1HhalQmRAQ@cluster0.garqbav.mongodb.net/?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -81,7 +81,7 @@ app.delete("/players/:id", async (req, res) => {
   }
 });
 
-const PORT = 3004;
+const PORT = 3005;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
